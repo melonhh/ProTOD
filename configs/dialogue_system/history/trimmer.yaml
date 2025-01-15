@@ -1,0 +1,11 @@
+# @package dialogue_system
+
+# dialogue history trimmer
+_target_: langchain_core.messages.utils.trim_messages
+max_tokens: 400  # Max token count of trimmed messages.
+token_counter: ???  # Function or llm for counting tokens.
+strategy: last  # [first, last]  Keep the first/last <= n_count tokens of the messages.
+allow_partial: false  # Whether to split a message if only part of the message can be included.
+end_on: null  # [system, human, ai] 可以是列表
+start_on: null  # [system, human, ai]  如果 `include_system` 为 `true`，`start_on` 不要应用 `system`
+include_system: false  # Whether to include system messages.  `strategy: last`

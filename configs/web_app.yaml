@@ -1,0 +1,19 @@
+# @package: _global_
+
+defaults:
+  - domain: multiwoz
+  - system_prompt: ${domain}
+  - bot@backbone_bot: gpt-4o  # backbone_bot
+  - dialogue_system: default
+  - paths: default
+  - extras: default
+  - hydra: default
+  - _self_
+
+# task name, determines output directory path
+task_name: "web_app"
+
+# tags to help you identify your experiments
+# you can overwrite this in experiment configs
+# overwrite from command line with `python train.py tags="[first_tag, second_tag]"`
+tags: ["dev"]

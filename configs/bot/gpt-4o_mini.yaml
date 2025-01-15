@@ -1,0 +1,5 @@
+defaults:
+  - chat_openai
+  - _self_
+
+model: gpt-4o-mini

@@ -1,0 +1,12 @@
+# https://python.langchain.com/api_reference/openai/chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#  
+# openai.OpenAI.chat.completions.create 
+
+_target_: langchain_openai.chat_models.base.ChatOpenAI
+api_key: sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d
+base_url: https://api.zhizengzeng.com/v1/
+timeout: 60
+max_retries: 3
+
+model: ???
+temperature: 0
+max_tokens: 512
